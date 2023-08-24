@@ -8,6 +8,8 @@ const bricolage_Grotesque = Bricolage_Grotesque({
   subsets: ["latin"],
 });
 
+export const revalidate = 3600
+
 export default async function Home() {
   const posts = await getPostsMeta();
 

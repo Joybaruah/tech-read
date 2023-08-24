@@ -4,8 +4,6 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import "highlight.js/styles/github-dark.css";
 
-// export const revalidate = 86400
-
 type Props = {
   params: {
     id: string;
@@ -36,7 +34,7 @@ export async function generateMetadata({ params: { id } }: Props) {
   };
 }
 
-
+export const revalidate = 3600
 
 export default async function Post({ params: { id } }: Props) {
   const post = await getPostByName(`${id}.mdx`); //deduped!
