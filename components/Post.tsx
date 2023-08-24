@@ -15,7 +15,7 @@ const bricolage_Grotesque = Bricolage_Grotesque({
 
 type Props = {
   post: Meta
-}
+} 
 
 export default function Post({ post }: Props) {
 
@@ -24,6 +24,7 @@ export default function Post({ post }: Props) {
       <h4 style={urbanist.style} className="text-xl hover:text-primary">
         {post.title}
       </h4>
+      <p style={urbanist.style} className="text-base py-1 dark:text-gray-400 text-gray-600">{post.description}</p>
       <p
         style={bricolage_Grotesque.style}
         className="py-2 text-gray-700 dark:text-gray-300"
