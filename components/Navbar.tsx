@@ -15,7 +15,7 @@ export default function Navbar() {
   const router = useRouter()
   
   return (
-    <div className="flex justify-between py-5 md:py-10 px-2 items-center">
+    <div className="flex justify-between py-3 md:py-6 px-2 items-center">
       <h3 onClick={() => router.push("/")} style={bricolage_Grotesque.style} className="text-xl font-bold text-primary cursor-pointer">
         read-tech
       </h3>

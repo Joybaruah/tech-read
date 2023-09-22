@@ -34,7 +34,7 @@ export async function getPostByName(
     title: string;
     description: string;
     date: string;
-    tags: string;
+    tags: string[];
   }>({
     source: rawMDX,
     options: {
